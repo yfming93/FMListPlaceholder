@@ -7,11 +7,13 @@
 //
 
 #import "FMPlaceholderView.h"
-#import "UIButton+FMImagePosition.h"
+#import "FMListPlaceholder.h"
+
+
 
 #define kFMScreenW   [UIScreen mainScreen].bounds.size.width       //屏幕宽度
 #define kFMScreenH   [UIScreen mainScreen].bounds.size.height      //屏幕高度
-#define kFit6(x)       (kScreenW*((x)/375.0))
+#define kFit6(x)       ((kFMScreenW)*((x)/375.0))
 #define kTipsH kFit6(22)
 
 @interface FMPlaceholderView ()

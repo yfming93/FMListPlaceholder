@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FMListPlaceholder.h"
 
 @interface UICollectionView (FMListPlaceholder)
 
 /** 是否需要空列表占位图 */
 @property (nonatomic, assign) BOOL needPlaceholderView;
 /** 占位图点击刷新Block */
-@property (nonatomic,   copy) reloadBlock reloadBlock;
+@property (nonatomic,copy) reloadBlock reloadBlock;
 
 
 - (void)fm_coverCenterYOffset:(CGFloat)coverCenterYOffset coverSize:(CGSize)coverSize coverSpaceToTips:(CGFloat)coverSpaceToTips;

@@ -15,6 +15,13 @@
 		DA51035121ECFEE100EB067D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51035021ECFEE100EB067D /* main.m */; };
 		DA51035B21ECFEE100EB067D /* FMListPlaceholderDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51035A21ECFEE100EB067D /* FMListPlaceholderDemoTests.m */; };
 		DA51036621ECFEE100EB067D /* FMListPlaceholderDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51036521ECFEE100EB067D /* FMListPlaceholderDemoUITests.m */; };
+		DA51038121ED088400EB067D /* NSObject+FMSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51037421ED088400EB067D /* NSObject+FMSwizzling.m */; };
+		DA51038221ED088400EB067D /* fm_emptylist_placeholder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA51037921ED088400EB067D /* fm_emptylist_placeholder@3x.png */; };
+		DA51038321ED088400EB067D /* fm_emptylist_placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA51037A21ED088400EB067D /* fm_emptylist_placeholder@2x.png */; };
+		DA51038421ED088400EB067D /* UITableView+FMListPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51037D21ED088400EB067D /* UITableView+FMListPlaceholder.m */; };
+		DA51038521ED088400EB067D /* UICollectionView+FMListPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51037E21ED088400EB067D /* UICollectionView+FMListPlaceholder.m */; };
+		DA51038621ED088400EB067D /* FMPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51037F21ED088400EB067D /* FMPlaceholderView.m */; };
+		DA51038721ED088400EB067D /* FMListPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51038021ED088400EB067D /* FMListPlaceholder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,18 @@
 		DA51036121ECFEE100EB067D /* FMListPlaceholderDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMListPlaceholderDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA51036521ECFEE100EB067D /* FMListPlaceholderDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMListPlaceholderDemoUITests.m; sourceTree = "<group>"; };
 		DA51036721ECFEE100EB067D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA51037421ED088400EB067D /* NSObject+FMSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FMSwizzling.m"; sourceTree = "<group>"; };
+		DA51037521ED088400EB067D /* UITableView+FMListPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FMListPlaceholder.h"; sourceTree = "<group>"; };
+		DA51037621ED088400EB067D /* FMPlaceholderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPlaceholderView.h; sourceTree = "<group>"; };
+		DA51037721ED088400EB067D /* UICollectionView+FMListPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+FMListPlaceholder.h"; sourceTree = "<group>"; };
+		DA51037921ED088400EB067D /* fm_emptylist_placeholder@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fm_emptylist_placeholder@3x.png"; sourceTree = "<group>"; };
+		DA51037A21ED088400EB067D /* fm_emptylist_placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fm_emptylist_placeholder@2x.png"; sourceTree = "<group>"; };
+		DA51037B21ED088400EB067D /* FMListPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMListPlaceholder.h; sourceTree = "<group>"; };
+		DA51037C21ED088400EB067D /* NSObject+FMSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FMSwizzling.h"; sourceTree = "<group>"; };
+		DA51037D21ED088400EB067D /* UITableView+FMListPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FMListPlaceholder.m"; sourceTree = "<group>"; };
+		DA51037E21ED088400EB067D /* UICollectionView+FMListPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+FMListPlaceholder.m"; sourceTree = "<group>"; };
+		DA51037F21ED088400EB067D /* FMPlaceholderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPlaceholderView.m; sourceTree = "<group>"; };
+		DA51038021ED088400EB067D /* FMListPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMListPlaceholder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +120,7 @@
 		DA51034021ECFEE000EB067D /* FMListPlaceholderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DA51037321ED088400EB067D /* FMListPlaceholder */,
 				DA51034121ECFEE000EB067D /* AppDelegate.h */,
 				DA51034221ECFEE000EB067D /* AppDelegate.m */,
 				DA51034421ECFEE000EB067D /* ViewController.h */,
@@ -130,6 +150,34 @@
 				DA51036721ECFEE100EB067D /* Info.plist */,
 			);
 			path = FMListPlaceholderDemoUITests;
+			sourceTree = "<group>";
+		};
+		DA51037321ED088400EB067D /* FMListPlaceholder */ = {
+			isa = PBXGroup;
+			children = (
+				DA51037B21ED088400EB067D /* FMListPlaceholder.h */,
+				DA51038021ED088400EB067D /* FMListPlaceholder.m */,
+				DA51037621ED088400EB067D /* FMPlaceholderView.h */,
+				DA51037F21ED088400EB067D /* FMPlaceholderView.m */,
+				DA51037C21ED088400EB067D /* NSObject+FMSwizzling.h */,
+				DA51037421ED088400EB067D /* NSObject+FMSwizzling.m */,
+				DA51037821ED088400EB067D /* Resources */,
+				DA51037721ED088400EB067D /* UICollectionView+FMListPlaceholder.h */,
+				DA51037E21ED088400EB067D /* UICollectionView+FMListPlaceholder.m */,
+				DA51037521ED088400EB067D /* UITableView+FMListPlaceholder.h */,
+				DA51037D21ED088400EB067D /* UITableView+FMListPlaceholder.m */,
+			);
+			name = FMListPlaceholder;
+			path = ../../FMListPlaceholder;
+			sourceTree = "<group>";
+		};
+		DA51037821ED088400EB067D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA51037921ED088400EB067D /* fm_emptylist_placeholder@3x.png */,
+				DA51037A21ED088400EB067D /* fm_emptylist_placeholder@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +283,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA51038221ED088400EB067D /* fm_emptylist_placeholder@3x.png in Resources */,
 				DA51034E21ECFEE100EB067D /* LaunchScreen.storyboard in Resources */,
 				DA51034B21ECFEE100EB067D /* Assets.xcassets in Resources */,
 				DA51034921ECFEE000EB067D /* Main.storyboard in Resources */,
+				DA51038321ED088400EB067D /* fm_emptylist_placeholder@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +312,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA51038721ED088400EB067D /* FMListPlaceholder.m in Sources */,
+				DA51038121ED088400EB067D /* NSObject+FMSwizzling.m in Sources */,
 				DA51034621ECFEE000EB067D /* ViewController.m in Sources */,
 				DA51035121ECFEE100EB067D /* main.m in Sources */,
+				DA51038421ED088400EB067D /* UITableView+FMListPlaceholder.m in Sources */,
 				DA51034321ECFEE000EB067D /* AppDelegate.m in Sources */,
+				DA51038521ED088400EB067D /* UICollectionView+FMListPlaceholder.m in Sources */,
+				DA51038621ED088400EB067D /* FMPlaceholderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
