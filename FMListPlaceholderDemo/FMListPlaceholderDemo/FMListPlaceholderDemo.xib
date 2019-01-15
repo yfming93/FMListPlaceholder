@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FMListPlaceholderDemo">
+            <connections>
+                <outlet property="view" destination="HNR-8s-Thb" id="Iu2-Sz-k9F"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="HNR-8s-Thb">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJh-fo-yKv">
+                    <rect key="frame" x="101" y="110" width="172" height="30"/>
+                    <state key="normal" title="FMTableViewPlaceholder"/>
+                    <connections>
+                        <action selector="fmTableViewPlaceholder:" destination="-1" eventType="touchUpInside" id="BEO-eV-z1J"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKz-Yy-HZL">
+                    <rect key="frame" x="85" y="190" width="204" height="30"/>
+                    <state key="normal" title="FMCollectionViewPlaceholder"/>
+                    <connections>
+                        <action selector="fmCollectionViewPlaceholder:" destination="-1" eventType="touchUpInside" id="YpE-ew-amP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VJh-fo-yKv" firstAttribute="top" secondItem="ZZl-8o-3uh" secondAttribute="top" constant="90" id="KrR-Nw-sYF"/>
+                <constraint firstItem="VKz-Yy-HZL" firstAttribute="centerX" secondItem="HNR-8s-Thb" secondAttribute="centerX" id="Mub-uG-SCU"/>
+                <constraint firstItem="VKz-Yy-HZL" firstAttribute="top" secondItem="VJh-fo-yKv" secondAttribute="bottom" constant="50" id="SNT-80-2sy"/>
+                <constraint firstItem="VJh-fo-yKv" firstAttribute="centerX" secondItem="HNR-8s-Thb" secondAttribute="centerX" id="Tee-62-oMg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZZl-8o-3uh"/>
+        </view>
+    </objects>
+</document>

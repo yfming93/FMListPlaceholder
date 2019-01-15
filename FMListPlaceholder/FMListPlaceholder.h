@@ -1,9 +1,11 @@
 //
 //  FMListPlaceholder.h
-//  FupingElectricity
+//  FMListPlaceholderDemo
 //
-//  Created by mingo on 2019/1/13.
-//  Copyright © 2019年 Fleeming. All rights reserved.
+//  Created by Mingo on 2018/8/9.
+//  Copyright © 2017年 袁凤鸣. All rights reserved.
+//  项目地址：https://github.com/yfming93/FMListPlaceholder
+//  作者博客：https://www.yfmingo.cn
 //
 
 #import <Foundation/Foundation.h>
@@ -31,9 +33,8 @@
 /// 设置默认的占位图 与 文字之间的距离
 @property (nonatomic, assign) CGFloat coverSpaceToTips;
 
-
+/// 初始化全局管家
 + (instancetype)sharedInstance;
-
 
 /**
  设置各种全局属性 

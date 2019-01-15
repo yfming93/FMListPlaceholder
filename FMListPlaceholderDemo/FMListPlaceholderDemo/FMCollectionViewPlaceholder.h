@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  FMCollectionViewPlaceholder.h
 //  FMListPlaceholderDemo
 //
 //  Created by mingo on 2019/1/15.
 //  Copyright © 2019年 袁凤鸣. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "FMBaseViewController.h"
 
-@interface ViewController : UIViewController
-
+@interface FMCollectionViewPlaceholder : FMBaseViewController
 
 @end
-

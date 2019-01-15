@@ -1,9 +1,11 @@
 //
 //  UITableView+FMListPlaceholder.m
-//  MobileProject
+//  FMListPlaceholderDemo
 //
 //  Created by Mingo on 2018/8/9.
 //  Copyright © 2017年 袁凤鸣. All rights reserved.
+//  项目地址：https://github.com/yfming93/FMListPlaceholder
+//  作者博客：https://www.yfmingo.cn
 //
 
 #import "UITableView+FMListPlaceholder.h"
@@ -11,16 +13,13 @@
 #import "FMPlaceholderView.h"
 
 @interface UITableView ()
-/**  创建完毕会第一次调用 reloadData 。
- isSecondReloadData 默认为NO，故table创建完的第一次 reloadData 刷新不会检测 。
- 【第二次 reloadData 是网络请求有结果后 刷新。此次会检测 isEmptyDataCheck。空数据就显示占位图】*/
+
 @property (nonatomic, assign) BOOL isSecondReloadData;
 @property (nonatomic, strong) FMPlaceholderView *placeholderView;
 
 @end
 
 @implementation UITableView (FMListPlaceholder)
-
 
 + (void)load {
     static dispatch_once_t onceToken;
@@ -51,24 +50,19 @@ static void *kFMPlaceholderView = &kFMPlaceholderView;
     objc_setAssociatedObject(self, @selector(placeholderView), placeholderView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-
 - (void)sure_reloadData {
-
+    [self addSubview:self.placeholderView];
     [self sure_reloadData]; //因为转换过方法。这里调用 sure_reloadData 就是调用 reloadData
 
     if (self.isSecondReloadData) {
-        
         if (self.needPlaceholderView ) {
             self.placeholderView.userInteractionEnabled = NO;
             [self fm_relaodPlaceholderViewHiddenOrShow];
         }
-        
         if ( self.reloadBlock) {
             self.placeholderView.userInteractionEnabled = YES;
             [self fm_relaodPlaceholderViewHiddenOrShow];
         }
-       
-        
     }else{
         self.isSecondReloadData = YES ;
     }
@@ -77,7 +71,6 @@ static void *kFMPlaceholderView = &kFMPlaceholderView;
 - (void)fm_relaodPlaceholderViewHiddenOrShow {
     BOOL isEmpty =  [self isEmptyDataCheck];
     if (isEmpty) {//若为空，加载占位图
-        [self addSubview:self.placeholderView];
         self.placeholderView.hidden = NO;
         
     }else{
@@ -88,7 +81,7 @@ static void *kFMPlaceholderView = &kFMPlaceholderView;
 - (BOOL)isEmptyDataCheck {
     BOOL isEmpty = YES;
     id <UITableViewDataSource> dataSource = self.dataSource;
-    NSInteger sections = 0;
+    NSInteger sections = 1;
     if ([dataSource respondsToSelector:@selector(numberOfSectionsInTableView:)]) {
         sections = [dataSource numberOfSectionsInTableView:self] ;//获取当前TableView组数
     }
@@ -118,6 +111,7 @@ static void *kFMPlaceholderView = &kFMPlaceholderView;
     if (emptyCoverName.length) {
         self.placeholderView.emptyCover.image = [UIImage imageNamed:emptyCoverName];
     }
+    
     if (tips.length) {
         [self.placeholderView.emptyTips setTitle:tips forState:UIControlStateNormal];
     }
@@ -137,6 +131,7 @@ static void *kFMPlaceholderView = &kFMPlaceholderView;
     if (coverSpaceToTips != nil) {
         self.placeholderView.coverSpaceToTips = coverSpaceToTips.floatValue;
     }
+    
     if (coverSize.width) {
         self.placeholderView.coverSize = coverSize;
     }
@@ -144,10 +139,7 @@ static void *kFMPlaceholderView = &kFMPlaceholderView;
     if (coverCenterYOffset != nil) {
         self.placeholderView.coverCenterYOffset = coverCenterYOffset.floatValue;
     }
-
 }
-
-
 
 - (BOOL)isSecondReloadData {
     return [objc_getAssociatedObject(self, @selector(isSecondReloadData)) boolValue];
@@ -156,7 +148,6 @@ static void *kFMPlaceholderView = &kFMPlaceholderView;
 - (void)setIsSecondReloadData:(BOOL)isSecondReloadData {
     objc_setAssociatedObject(self, @selector(isSecondReloadData), @(isSecondReloadData), OBJC_ASSOCIATION_ASSIGN);
 }
-
 
 - (BOOL)needPlaceholderView {
     return [objc_getAssociatedObject(self, @selector(needPlaceholderView)) boolValue];

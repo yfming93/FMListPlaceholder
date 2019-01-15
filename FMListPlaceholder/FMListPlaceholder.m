@@ -1,20 +1,20 @@
 //
 //  FMListPlaceholder.m
-//  FupingElectricity
+//  FMListPlaceholderDemo
 //
-//  Created by mingo on 2019/1/13.
-//  Copyright © 2019年 Fleeming. All rights reserved.
+//  Created by Mingo on 2018/8/9.
+//  Copyright © 2017年 袁凤鸣. All rights reserved.
+//  项目地址：https://github.com/yfming93/FMListPlaceholder
+//  作者博客：https://www.yfmingo.cn
 //
 
 #import "FMListPlaceholder.h"
-
 
 static id  _sharedInstance = nil;
 
 @interface FMListPlaceholder()<NSCopying,NSMutableCopying>
 
 @end
-
 
 @implementation FMListPlaceholder
 

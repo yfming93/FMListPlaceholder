@@ -1,9 +1,11 @@
 //
 //  UICollectionView+FMListPlaceholder.m
-//  MobileProject
+//  FMListPlaceholderDemo
 //
 //  Created by Mingo on 2018/8/9.
 //  Copyright © 2017年 袁凤鸣. All rights reserved.
+//  项目地址：https://github.com/yfming93/FMListPlaceholder
+//  作者博客：https://www.yfmingo.cn
 //
 
 #import "UICollectionView+FMListPlaceholder.h"
@@ -12,16 +14,12 @@
 
 @interface UICollectionView ()
 
-/**  创建完毕会第一次调用 reloadData 。
- isSecondReloadData 默认为NO，故table创建完的第一次 reloadData 刷新不会检测 。
- 【第二次 reloadData 是网络请求有结果后 刷新。此次会检测 isEmptyDataCheck。空数据就显示占位图】*/
 @property (nonatomic, assign) BOOL isSecondReloadData;
 @property (nonatomic, strong) FMPlaceholderView *placeholderView;
 
 @end
 
 @implementation UICollectionView (FMListPlaceholder)
-
 
 + (void)load {
     static dispatch_once_t onceToken;
@@ -36,7 +34,7 @@ static void *kFMPlaceholderView = &kFMPlaceholderView;
 - (FMPlaceholderView *)placeholderView {
     FMPlaceholderView *placeholderView = objc_getAssociatedObject(self, kFMPlaceholderView);
     if (!placeholderView) {
-        placeholderView = [[FMPlaceholderView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height )];
+        placeholderView = [[FMPlaceholderView alloc]initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height )];
         __weak typeof(self) weakSelf = self;
         placeholderView.reloadClickBlock = ^{
             if (weakSelf.reloadBlock) {
@@ -54,31 +52,27 @@ static void *kFMPlaceholderView = &kFMPlaceholderView;
 
 
 - (void)sure_reloadData {
-    
+    [self addSubview:self.placeholderView];
     [self sure_reloadData]; //因为转换过方法。这里调用 sure_reloadData 就是调用 reloadData
     
     if (self.isSecondReloadData) {
-        
         if (self.needPlaceholderView ) {
             self.placeholderView.userInteractionEnabled = NO;
             [self fm_relaodPlaceholderViewHiddenOrShow];
         }
-        
         if ( self.reloadBlock) {
             self.placeholderView.userInteractionEnabled = YES;
             [self fm_relaodPlaceholderViewHiddenOrShow];
         }
-        
-        
     }else{
         self.isSecondReloadData = YES ;
     }
 }
 
 - (void)fm_relaodPlaceholderViewHiddenOrShow {
+
     BOOL isEmpty =  [self isEmptyDataCheck];
     if (isEmpty) {//若为空，加载占位图
-        [self addSubview:self.placeholderView];
         self.placeholderView.hidden = NO;
         
     }else{
@@ -89,7 +83,7 @@ static void *kFMPlaceholderView = &kFMPlaceholderView;
 - (BOOL)isEmptyDataCheck {
     BOOL isEmpty = YES;
     id <UICollectionViewDataSource> dataSource = self.dataSource;
-    NSInteger sections = 0;
+    NSInteger sections = 1;
     if ([dataSource respondsToSelector:@selector(numberOfSectionsInCollectionView:)]) {
         sections = [dataSource numberOfSectionsInCollectionView:self];
     }

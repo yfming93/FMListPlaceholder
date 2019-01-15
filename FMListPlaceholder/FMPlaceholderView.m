@@ -1,15 +1,16 @@
 //
 //  FMPlaceholderView.m
-//  MobileProject
+//  FMListPlaceholderDemo
 //
 //  Created by Mingo on 2018/8/9.
 //  Copyright © 2017年 袁凤鸣. All rights reserved.
+//  项目地址：https://github.com/yfming93/FMListPlaceholder
+//  作者博客：https://www.yfmingo.cn
 //
 
 #import "FMPlaceholderView.h"
 #import "FMListPlaceholder.h"
-
-
+#import "NSBundle+FMListPlaceholder.h"
 
 #define kFMScreenW   [UIScreen mainScreen].bounds.size.width       //屏幕宽度
 #define kFMScreenH   [UIScreen mainScreen].bounds.size.height      //屏幕高度
@@ -29,9 +30,9 @@
     if (self = [super initWithFrame:frame]) {
         self.userInteractionEnabled = YES;
         _defaultEmptyTips = @"这里是空的哟";
-        _defaultEmptyCoverName = @"fm_emptylist_placeholder";
         _coverSpaceToTips = kFit6(10);
         _coverCenterYOffset = 0;
+        self.hidden = YES;
         if (FMListPlaceholder.sharedInstance.defaultBackgroundColor) {
             self.backgroundColor = FMListPlaceholder.sharedInstance.defaultBackgroundColor;
         }
@@ -82,7 +83,11 @@
 
 - (UIImageView *)emptyCover{
     if (!_emptyCover) {
-        _emptyCover =[[UIImageView alloc] initWithImage:[UIImage imageNamed:_defaultEmptyCoverName]];
+        _emptyCover =[[UIImageView alloc] init];
+        if (!_defaultEmptyCoverName.length) {
+            UIImage *ima = [NSBundle fm_coverImage];
+            [_emptyCover setImage:ima];
+        }
         _emptyCover.contentMode =  UIViewContentModeScaleToFill;
         
         CGSize coverSize = CGSizeMake(self.frame.size.width/3, self.frame.size.width/3);
@@ -94,7 +99,6 @@
                                        (self.frame.size.height - coverSize.height) - _coverSpaceToTips - kTipsH,
                                        coverSize.width,
                                        coverSize.height);
-//        _emptyCover.center = self.center;
         CGFloat OffsetY = FMListPlaceholder.sharedInstance.coverCenterYOffset;
         if (self.coverCenterYOffset) {
             OffsetY = self.coverCenterYOffset;
@@ -121,6 +125,7 @@
                                       CGRectGetMaxY(self.emptyCover.frame) + _coverSpaceToTips,
                                       self.frame.size.width,
                                       kTipsH);
+        _emptyTips.center = CGPointMake(self.center.x, _emptyTips.center.y);
         [_emptyTips addTarget:self action:@selector(tapAction) forControlEvents:UIControlEventTouchUpInside];
         if (FMListPlaceholder.sharedInstance.defaultTipsTextColor) {
             [_emptyTips setTitleColor:FMListPlaceholder.sharedInstance.defaultTipsTextColor forState:UIControlStateNormal];
@@ -135,10 +140,8 @@
     return _emptyTips;
 }
 
-
 - (void)tapAction {
     if (self.reloadClickBlock) {
-        
         self.reloadClickBlock();
         
         [UIView animateWithDuration:1.0 animations:^{
@@ -152,19 +155,9 @@
     }
 }
 
-
 - (void)createUI {
     [self addSubview:self.emptyCover];
     [self addSubview:self.emptyTips];
 }
-
-- (void)reloadClick:(UIButton*)button {
-    if (self.reloadClickBlock) {
-        self.reloadClickBlock();
-    }
-}
-
-
-
 
 @end
