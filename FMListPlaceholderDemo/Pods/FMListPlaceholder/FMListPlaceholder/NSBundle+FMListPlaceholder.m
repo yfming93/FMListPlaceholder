@@ -18,7 +18,9 @@
 {
     static NSBundle *fmListPlaceholderBundle = nil;
     if (fmListPlaceholderBundle == nil) {
-        fmListPlaceholderBundle = [NSBundle bundleForClass:[FMListPlaceholder class]];
+        // 这里不使用mainBundle是为了适配pod 1.x和0.x
+        NSBundle *framework = [NSBundle bundleForClass:[FMListPlaceholder class]];
+        fmListPlaceholderBundle = [NSBundle bundleWithPath:[framework pathForResource:@"FMListPlaceholder" ofType:@"bundle"]];
     }
     return fmListPlaceholderBundle;
 }

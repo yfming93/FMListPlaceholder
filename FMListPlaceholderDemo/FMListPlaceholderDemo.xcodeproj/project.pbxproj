@@ -14,13 +14,6 @@
 		DA51035121ECFEE100EB067D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51035021ECFEE100EB067D /* main.m */; };
 		DA51035B21ECFEE100EB067D /* FMListPlaceholderDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51035A21ECFEE100EB067D /* FMListPlaceholderDemoTests.m */; };
 		DA51036621ECFEE100EB067D /* FMListPlaceholderDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51036521ECFEE100EB067D /* FMListPlaceholderDemoUITests.m */; };
-		DA51039521ED7B4200EB067D /* NSObject+FMSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51038921ED7B4200EB067D /* NSObject+FMSwizzling.m */; };
-		DA51039621ED7B4200EB067D /* UITableView+FMListPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51039021ED7B4200EB067D /* UITableView+FMListPlaceholder.m */; };
-		DA51039721ED7B4200EB067D /* UICollectionView+FMListPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51039121ED7B4200EB067D /* UICollectionView+FMListPlaceholder.m */; };
-		DA51039821ED7B4200EB067D /* FMListPlaceholder.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DA51039221ED7B4200EB067D /* FMListPlaceholder.bundle */; };
-		DA51039921ED7B4200EB067D /* FMPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51039321ED7B4200EB067D /* FMPlaceholderView.m */; };
-		DA51039A21ED7B4200EB067D /* FMListPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51039421ED7B4200EB067D /* FMListPlaceholder.m */; };
-		DA5103A021ED7F0000EB067D /* NSBundle+FMListPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51039F21ED7F0000EB067D /* NSBundle+FMListPlaceholder.m */; };
 		DA5103A921ED837200EB067D /* FMTableViewPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5103A821ED837200EB067D /* FMTableViewPlaceholder.m */; };
 		DA5103AC21ED838C00EB067D /* FMCollectionViewPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5103AB21ED838C00EB067D /* FMCollectionViewPlaceholder.m */; };
 		DA5103B021ED860D00EB067D /* FMListPlaceholderDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5103AE21ED860D00EB067D /* FMListPlaceholderDemo.m */; };
@@ -65,19 +58,6 @@
 		DA51036121ECFEE100EB067D /* FMListPlaceholderDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMListPlaceholderDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA51036521ECFEE100EB067D /* FMListPlaceholderDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMListPlaceholderDemoUITests.m; sourceTree = "<group>"; };
 		DA51036721ECFEE100EB067D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA51038921ED7B4200EB067D /* NSObject+FMSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FMSwizzling.m"; sourceTree = "<group>"; };
-		DA51038A21ED7B4200EB067D /* UITableView+FMListPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FMListPlaceholder.h"; sourceTree = "<group>"; };
-		DA51038B21ED7B4200EB067D /* FMPlaceholderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPlaceholderView.h; sourceTree = "<group>"; };
-		DA51038C21ED7B4200EB067D /* UICollectionView+FMListPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+FMListPlaceholder.h"; sourceTree = "<group>"; };
-		DA51038E21ED7B4200EB067D /* FMListPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMListPlaceholder.h; sourceTree = "<group>"; };
-		DA51038F21ED7B4200EB067D /* NSObject+FMSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FMSwizzling.h"; sourceTree = "<group>"; };
-		DA51039021ED7B4200EB067D /* UITableView+FMListPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FMListPlaceholder.m"; sourceTree = "<group>"; };
-		DA51039121ED7B4200EB067D /* UICollectionView+FMListPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+FMListPlaceholder.m"; sourceTree = "<group>"; };
-		DA51039221ED7B4200EB067D /* FMListPlaceholder.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FMListPlaceholder.bundle; sourceTree = "<group>"; };
-		DA51039321ED7B4200EB067D /* FMPlaceholderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPlaceholderView.m; sourceTree = "<group>"; };
-		DA51039421ED7B4200EB067D /* FMListPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMListPlaceholder.m; sourceTree = "<group>"; };
-		DA51039E21ED7F0000EB067D /* NSBundle+FMListPlaceholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+FMListPlaceholder.h"; sourceTree = "<group>"; };
-		DA51039F21ED7F0000EB067D /* NSBundle+FMListPlaceholder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+FMListPlaceholder.m"; sourceTree = "<group>"; };
 		DA5103A721ED837200EB067D /* FMTableViewPlaceholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMTableViewPlaceholder.h; sourceTree = "<group>"; };
 		DA5103A821ED837200EB067D /* FMTableViewPlaceholder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMTableViewPlaceholder.m; sourceTree = "<group>"; };
 		DA5103AA21ED838C00EB067D /* FMCollectionViewPlaceholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMCollectionViewPlaceholder.h; sourceTree = "<group>"; };
@@ -160,7 +140,6 @@
 			children = (
 				DA5103D521EDC8F300EB067D /* Base */,
 				DA5103B321ED8AFA00EB067D /* SupportFiles */,
-				DA51038821ED7B4200EB067D /* FMListPlaceholder */,
 				DA5103A721ED837200EB067D /* FMTableViewPlaceholder.h */,
 				DA5103A821ED837200EB067D /* FMTableViewPlaceholder.m */,
 				DA5103AA21ED838C00EB067D /* FMCollectionViewPlaceholder.h */,
@@ -188,27 +167,6 @@
 				DA51036721ECFEE100EB067D /* Info.plist */,
 			);
 			path = FMListPlaceholderDemoUITests;
-			sourceTree = "<group>";
-		};
-		DA51038821ED7B4200EB067D /* FMListPlaceholder */ = {
-			isa = PBXGroup;
-			children = (
-				DA51039221ED7B4200EB067D /* FMListPlaceholder.bundle */,
-				DA51038E21ED7B4200EB067D /* FMListPlaceholder.h */,
-				DA51039421ED7B4200EB067D /* FMListPlaceholder.m */,
-				DA51038B21ED7B4200EB067D /* FMPlaceholderView.h */,
-				DA51039321ED7B4200EB067D /* FMPlaceholderView.m */,
-				DA51038F21ED7B4200EB067D /* NSObject+FMSwizzling.h */,
-				DA51038921ED7B4200EB067D /* NSObject+FMSwizzling.m */,
-				DA51038C21ED7B4200EB067D /* UICollectionView+FMListPlaceholder.h */,
-				DA51039121ED7B4200EB067D /* UICollectionView+FMListPlaceholder.m */,
-				DA51038A21ED7B4200EB067D /* UITableView+FMListPlaceholder.h */,
-				DA51039021ED7B4200EB067D /* UITableView+FMListPlaceholder.m */,
-				DA51039E21ED7F0000EB067D /* NSBundle+FMListPlaceholder.h */,
-				DA51039F21ED7F0000EB067D /* NSBundle+FMListPlaceholder.m */,
-			);
-			name = FMListPlaceholder;
-			path = ../../FMListPlaceholder;
 			sourceTree = "<group>";
 		};
 		DA5103B321ED8AFA00EB067D /* SupportFiles */ = {
@@ -344,7 +302,6 @@
 				DA51034E21ECFEE100EB067D /* LaunchScreen.storyboard in Resources */,
 				DA5103B121ED860D00EB067D /* FMListPlaceholderDemo.xib in Resources */,
 				DA51034B21ECFEE100EB067D /* Assets.xcassets in Resources */,
-				DA51039821ED7B4200EB067D /* FMListPlaceholder.bundle in Resources */,
 				DA51034921ECFEE000EB067D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,10 +330,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FMListPlaceholderDemo/Pods-FMListPlaceholderDemo-resources.sh",
+				"${PODS_ROOT}/../../FMListPlaceholder/FMListPlaceholderResources.bundle/fm_emptylist_placeholder@2x.png",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/fm_emptylist_placeholder@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,18 +368,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA51039A21ED7B4200EB067D /* FMListPlaceholder.m in Sources */,
 				DA5103B021ED860D00EB067D /* FMListPlaceholderDemo.m in Sources */,
-				DA5103A021ED7F0000EB067D /* NSBundle+FMListPlaceholder.m in Sources */,
 				DA5103AC21ED838C00EB067D /* FMCollectionViewPlaceholder.m in Sources */,
-				DA51039521ED7B4200EB067D /* NSObject+FMSwizzling.m in Sources */,
 				DA51035121ECFEE100EB067D /* main.m in Sources */,
-				DA51039621ED7B4200EB067D /* UITableView+FMListPlaceholder.m in Sources */,
 				DA5103A921ED837200EB067D /* FMTableViewPlaceholder.m in Sources */,
 				DA51034321ECFEE000EB067D /* AppDelegate.m in Sources */,
-				DA51039721ED7B4200EB067D /* UICollectionView+FMListPlaceholder.m in Sources */,
 				DA5103CF21ED9E8300EB067D /* FMBaseViewController.m in Sources */,
-				DA51039921ED7B4200EB067D /* FMPlaceholderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,12 +545,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SV98J7C3Y8;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FMListPlaceholderDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = Mingo.FMListPlaceholderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -611,6 +566,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SV98J7C3Y8;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FMListPlaceholderDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

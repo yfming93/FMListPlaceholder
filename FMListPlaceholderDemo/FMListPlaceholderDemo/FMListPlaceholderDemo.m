@@ -7,7 +7,6 @@
 //
 
 #import "FMListPlaceholderDemo.h"
-#import "FMListPlaceholder.h"
 #import "FMTableViewPlaceholder.h"
 #import "FMCollectionViewPlaceholder.h"
 

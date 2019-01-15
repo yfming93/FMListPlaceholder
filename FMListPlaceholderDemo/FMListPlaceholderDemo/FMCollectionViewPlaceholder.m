@@ -8,6 +8,7 @@
 
 #import "FMCollectionViewPlaceholder.h"
 #import <MJRefresh.h>
+//#import <FMListPlaceholder.h>
 #import "FMListPlaceholder.h"
 
 static NSString *cellID = @"UICollectionView";

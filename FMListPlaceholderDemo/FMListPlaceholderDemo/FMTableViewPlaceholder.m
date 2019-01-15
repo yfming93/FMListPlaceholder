@@ -7,8 +7,8 @@
 //
 
 #import "FMTableViewPlaceholder.h"
-#import "FMListPlaceholder.h"
 #import <MJRefresh.h>
+#import <FMListPlaceholder.h>
 
 static NSString *cellID = @"UITableViewCell";
 

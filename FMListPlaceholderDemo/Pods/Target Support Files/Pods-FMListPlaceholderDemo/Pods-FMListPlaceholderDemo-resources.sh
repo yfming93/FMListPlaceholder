@@ -92,9 +92,11 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/../../FMListPlaceholder/FMListPlaceholderResources.bundle/fm_emptylist_placeholder@2x.png"
   install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_ROOT}/../../FMListPlaceholder/FMListPlaceholderResources.bundle/fm_emptylist_placeholder@2x.png"
   install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
 fi
 
