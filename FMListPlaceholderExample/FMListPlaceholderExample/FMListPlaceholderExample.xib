@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FMListPlaceholderExample">
+            <connections>
+                <outlet property="view" destination="HNR-8s-Thb" id="Iu2-Sz-k9F"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="HNR-8s-Thb">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJh-fo-yKv">
+                    <rect key="frame" x="80.5" y="190" width="213" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="FMTableViewPlaceholder"/>
+                    <connections>
+                        <action selector="fmTableViewPlaceholder:" destination="-1" eventType="touchUpInside" id="BEO-eV-z1J"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKz-Yy-HZL">
+                    <rect key="frame" x="73.5" y="265" width="227" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="FMCollectionViewPlaceholder"/>
+                    <connections>
+                        <action selector="fmCollectionViewPlaceholder:" destination="-1" eventType="touchUpInside" id="YpE-ew-amP"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FMListPlaceholderExample" translatesAutoresizingMaskIntoConstraints="NO" id="HLQ-gG-As7">
+                    <rect key="frame" x="10" y="50" width="355" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="dvw-JT-vgU"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HLQ-gG-As7" firstAttribute="top" secondItem="ZZl-8o-3uh" secondAttribute="top" constant="30" id="Mc9-E0-EbM"/>
+                <constraint firstItem="VKz-Yy-HZL" firstAttribute="centerX" secondItem="HNR-8s-Thb" secondAttribute="centerX" id="Mub-uG-SCU"/>
+                <constraint firstItem="VKz-Yy-HZL" firstAttribute="top" secondItem="VJh-fo-yKv" secondAttribute="bottom" constant="40" id="SNT-80-2sy"/>
+                <constraint firstItem="VJh-fo-yKv" firstAttribute="centerX" secondItem="HNR-8s-Thb" secondAttribute="centerX" id="Tee-62-oMg"/>
+                <constraint firstItem="ZZl-8o-3uh" firstAttribute="trailing" secondItem="HLQ-gG-As7" secondAttribute="trailing" constant="10" id="TyZ-lV-4Zu"/>
+                <constraint firstItem="HLQ-gG-As7" firstAttribute="leading" secondItem="ZZl-8o-3uh" secondAttribute="leading" constant="10" id="ax4-h7-etN"/>
+                <constraint firstItem="VJh-fo-yKv" firstAttribute="top" secondItem="HLQ-gG-As7" secondAttribute="bottom" constant="40" id="fsi-oU-REm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZZl-8o-3uh"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FMListPlaceholderExample" width="649" height="203"/>
+    </resources>
+</document>

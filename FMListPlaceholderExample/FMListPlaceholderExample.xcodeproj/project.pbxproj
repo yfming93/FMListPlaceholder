@@ -15,11 +15,11 @@
 		DAA77B0E21EED7D4002EAC6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B0D21EED7D4002EAC6B /* main.m */; };
 		DAA77B1821EED7D4002EAC6B /* FMListPlaceholderExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B1721EED7D4002EAC6B /* FMListPlaceholderExampleTests.m */; };
 		DAA77B2321EED7D4002EAC6B /* FMListPlaceholderExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B2221EED7D4002EAC6B /* FMListPlaceholderExampleUITests.m */; };
-		DAA77B3521EED8B2002EAC6B /* FMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B3321EED8B2002EAC6B /* FMBaseViewController.m */; };
-		DAA77B3D21EED8C3002EAC6B /* FMCollectionViewPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B3621EED8C2002EAC6B /* FMCollectionViewPlaceholder.m */; };
-		DAA77B3E21EED8C3002EAC6B /* FMListPlaceholderExample.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B3721EED8C2002EAC6B /* FMListPlaceholderExample.m */; };
-		DAA77B3F21EED8C3002EAC6B /* FMListPlaceholderExample.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA77B3A21EED8C2002EAC6B /* FMListPlaceholderExample.xib */; };
-		DAA77B4021EED8C3002EAC6B /* FMTableViewPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B3B21EED8C2002EAC6B /* FMTableViewPlaceholder.m */; };
+		DAA77B4D21EF2832002EAC6B /* FMListPlaceholderExample.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B4321EF2831002EAC6B /* FMListPlaceholderExample.m */; };
+		DAA77B4E21EF2832002EAC6B /* FMCollectionViewPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B4421EF2831002EAC6B /* FMCollectionViewPlaceholder.m */; };
+		DAA77B4F21EF2832002EAC6B /* FMTableViewPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B4721EF2831002EAC6B /* FMTableViewPlaceholder.m */; };
+		DAA77B5021EF2832002EAC6B /* FMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B4921EF2831002EAC6B /* FMBaseViewController.m */; };
+		DAA77B5121EF2832002EAC6B /* FMListPlaceholderExample.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA77B4C21EF2832002EAC6B /* FMListPlaceholderExample.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,15 +57,15 @@
 		DAA77B1E21EED7D4002EAC6B /* FMListPlaceholderExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMListPlaceholderExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA77B2221EED7D4002EAC6B /* FMListPlaceholderExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMListPlaceholderExampleUITests.m; sourceTree = "<group>"; };
 		DAA77B2421EED7D4002EAC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAA77B3321EED8B2002EAC6B /* FMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMBaseViewController.m; sourceTree = "<group>"; };
-		DAA77B3421EED8B2002EAC6B /* FMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMBaseViewController.h; sourceTree = "<group>"; };
-		DAA77B3621EED8C2002EAC6B /* FMCollectionViewPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMCollectionViewPlaceholder.m; path = ../../FMListPlaceholderDemo/FMListPlaceholderDemo/FMCollectionViewPlaceholder.m; sourceTree = "<group>"; };
-		DAA77B3721EED8C2002EAC6B /* FMListPlaceholderExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMListPlaceholderExample.m; path = ../../FMListPlaceholderDemo/FMListPlaceholderDemo/FMListPlaceholderExample.m; sourceTree = "<group>"; };
-		DAA77B3821EED8C2002EAC6B /* FMTableViewPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMTableViewPlaceholder.h; path = ../../FMListPlaceholderDemo/FMListPlaceholderDemo/FMTableViewPlaceholder.h; sourceTree = "<group>"; };
-		DAA77B3921EED8C2002EAC6B /* FMListPlaceholderExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMListPlaceholderExample.h; path = ../../FMListPlaceholderDemo/FMListPlaceholderDemo/FMListPlaceholderExample.h; sourceTree = "<group>"; };
-		DAA77B3A21EED8C2002EAC6B /* FMListPlaceholderExample.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FMListPlaceholderExample.xib; path = ../../FMListPlaceholderDemo/FMListPlaceholderDemo/FMListPlaceholderExample.xib; sourceTree = "<group>"; };
-		DAA77B3B21EED8C2002EAC6B /* FMTableViewPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMTableViewPlaceholder.m; path = ../../FMListPlaceholderDemo/FMListPlaceholderDemo/FMTableViewPlaceholder.m; sourceTree = "<group>"; };
-		DAA77B3C21EED8C2002EAC6B /* FMCollectionViewPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMCollectionViewPlaceholder.h; path = ../../FMListPlaceholderDemo/FMListPlaceholderDemo/FMCollectionViewPlaceholder.h; sourceTree = "<group>"; };
+		DAA77B4321EF2831002EAC6B /* FMListPlaceholderExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMListPlaceholderExample.m; sourceTree = "<group>"; };
+		DAA77B4421EF2831002EAC6B /* FMCollectionViewPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMCollectionViewPlaceholder.m; sourceTree = "<group>"; };
+		DAA77B4521EF2831002EAC6B /* FMListPlaceholderExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMListPlaceholderExample.h; sourceTree = "<group>"; };
+		DAA77B4621EF2831002EAC6B /* FMCollectionViewPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMCollectionViewPlaceholder.h; sourceTree = "<group>"; };
+		DAA77B4721EF2831002EAC6B /* FMTableViewPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTableViewPlaceholder.m; sourceTree = "<group>"; };
+		DAA77B4921EF2831002EAC6B /* FMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMBaseViewController.m; sourceTree = "<group>"; };
+		DAA77B4A21EF2831002EAC6B /* FMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMBaseViewController.h; sourceTree = "<group>"; };
+		DAA77B4B21EF2832002EAC6B /* FMTableViewPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTableViewPlaceholder.h; sourceTree = "<group>"; };
+		DAA77B4C21EF2832002EAC6B /* FMListPlaceholderExample.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMListPlaceholderExample.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,14 +136,14 @@
 		DAA77AFD21EED7D3002EAC6B /* FMListPlaceholderExample */ = {
 			isa = PBXGroup;
 			children = (
-				DAA77B3221EED8B2002EAC6B /* Base */,
-				DAA77B3C21EED8C2002EAC6B /* FMCollectionViewPlaceholder.h */,
-				DAA77B3621EED8C2002EAC6B /* FMCollectionViewPlaceholder.m */,
-				DAA77B3821EED8C2002EAC6B /* FMTableViewPlaceholder.h */,
-				DAA77B3B21EED8C2002EAC6B /* FMTableViewPlaceholder.m */,
-				DAA77B3921EED8C2002EAC6B /* FMListPlaceholderExample.h */,
-				DAA77B3721EED8C2002EAC6B /* FMListPlaceholderExample.m */,
-				DAA77B3A21EED8C2002EAC6B /* FMListPlaceholderExample.xib */,
+				DAA77B4821EF2831002EAC6B /* Base */,
+				DAA77B4621EF2831002EAC6B /* FMCollectionViewPlaceholder.h */,
+				DAA77B4421EF2831002EAC6B /* FMCollectionViewPlaceholder.m */,
+				DAA77B4B21EF2832002EAC6B /* FMTableViewPlaceholder.h */,
+				DAA77B4721EF2831002EAC6B /* FMTableViewPlaceholder.m */,
+				DAA77B4521EF2831002EAC6B /* FMListPlaceholderExample.h */,
+				DAA77B4321EF2831002EAC6B /* FMListPlaceholderExample.m */,
+				DAA77B4C21EF2832002EAC6B /* FMListPlaceholderExample.xib */,
 				DAA77B3121EED874002EAC6B /* Support Files */,
 			);
 			path = FMListPlaceholderExample;
@@ -181,14 +181,13 @@
 			name = "Support Files";
 			sourceTree = "<group>";
 		};
-		DAA77B3221EED8B2002EAC6B /* Base */ = {
+		DAA77B4821EF2831002EAC6B /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				DAA77B3421EED8B2002EAC6B /* FMBaseViewController.h */,
-				DAA77B3321EED8B2002EAC6B /* FMBaseViewController.m */,
+				DAA77B4921EF2831002EAC6B /* FMBaseViewController.m */,
+				DAA77B4A21EF2831002EAC6B /* FMBaseViewController.h */,
 			);
-			name = Base;
-			path = ../../FMListPlaceholderDemo/FMListPlaceholderDemo/Base;
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,9 +296,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA77B0B21EED7D4002EAC6B /* LaunchScreen.storyboard in Resources */,
-				DAA77B3F21EED8C3002EAC6B /* FMListPlaceholderExample.xib in Resources */,
 				DAA77B0821EED7D4002EAC6B /* Assets.xcassets in Resources */,
 				DAA77B0621EED7D3002EAC6B /* Main.storyboard in Resources */,
+				DAA77B5121EF2832002EAC6B /* FMListPlaceholderExample.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,11 +364,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAA77B4021EED8C3002EAC6B /* FMTableViewPlaceholder.m in Sources */,
+				DAA77B4D21EF2832002EAC6B /* FMListPlaceholderExample.m in Sources */,
+				DAA77B4F21EF2832002EAC6B /* FMTableViewPlaceholder.m in Sources */,
+				DAA77B4E21EF2832002EAC6B /* FMCollectionViewPlaceholder.m in Sources */,
 				DAA77B0E21EED7D4002EAC6B /* main.m in Sources */,
-				DAA77B3D21EED8C3002EAC6B /* FMCollectionViewPlaceholder.m in Sources */,
-				DAA77B3E21EED8C3002EAC6B /* FMListPlaceholderExample.m in Sources */,
-				DAA77B3521EED8B2002EAC6B /* FMBaseViewController.m in Sources */,
+				DAA77B5021EF2832002EAC6B /* FMBaseViewController.m in Sources */,
 				DAA77B0021EED7D3002EAC6B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
