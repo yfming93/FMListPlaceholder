@@ -13,7 +13,7 @@ A delightful Placeholder for List View (UITableView, UICollectionView).
 
 ### 0x001 Different From Other Similar：
 
-- Placeholders are not displayed at first time while you enter the list. The logic is processed when the list is refreshed again after the network request is completed.
+- Placeholders are not displayed at first time while you enter the list. The logic is processed when the list is refreshed again after network request is completed.
 - Simple, efficient and practical, one line code can be integrated;
 - Provide a more comprehensive and highly customized effect.
 - The default effect can be replaced with one line code. Set your own global default effects. You can also customize the effect again in a special list.
