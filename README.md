@@ -47,14 +47,15 @@ Or Use Below
 }
 ```
 #### 0x004 Custom
-##### Custom One List
-
+##### Custom One List 
 
 ``` objc
 [_tableView fm_emptyCoverName:@"fm_placeholder_nil" emptyTips:@" "];
 [_tableView fm_backgroundColor:[UIColor colorWithRed:0.91 green:0.90 blue:0.90 alpha:1.00] tipsTextColor:UIColor.redColor tipsFont:nil];
 [_tableView fm_coverCenterYOffset:-80 coverSize:CGSizeMake(90, 120) coverSpaceToTips:20];
 ```
+(the same as UICollectionView)
+<br/>
 
 ##### Click Reload Handle
 
