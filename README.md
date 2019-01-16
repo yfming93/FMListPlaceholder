@@ -7,16 +7,16 @@
 [![support](https://img.shields.io/badge/support-iOS9%2B-orange.svg)](#) 
 
 
-A delightful Placeholder for List View (UITableView,UICollectionView).
+A delightful Placeholder for List View (UITableView, UICollectionView).
 
-**One line of code handle empty list placeholder logic.**
+**One line code handle empty list placeholder logic.**
 
 ### 0x001 Different From Other Similar：
 
-- Placeholders are not displayed the first time you enter the list. The logic is processed when the list is refreshed again after the network request is completed.
-- Simple, efficient and practical, one line of code can be integrated;
+- Placeholders are not displayed at first time while you enter the list. The logic is processed when the list is refreshed again after the network request is completed.
+- Simple, efficient and practical, one line code can be integrated;
 - Provide a more comprehensive and highly customized effect.
-- The default effect can be replaced with one line of code. Set your own global default effects. You can also customize the effect again in a separate list;
+- The default effect can be replaced with one line code. Set your own global default effects. You can also customize the effect again in a special list.
 
 ### 0x002 Renderings
 ![](https://ws1.sinaimg.cn/large/006tNc79gy1fz8jghf5d0g30hj0dsx6p.gif)
@@ -25,6 +25,7 @@ A delightful Placeholder for List View (UITableView,UICollectionView).
 ### 0x003 How to use
 - Use CocoaPods:
     - write `pod "FMListPlaceholder"` in the `Podfile` file.
+    - Open terminal, cd the directory of project. run `pod install`.
     - Import the main file：`#import <FMListPlaceholder.h>`
 - Manual import：
     - Drag All files in the `FMListPlaceholder` folder to project.
@@ -32,7 +33,7 @@ A delightful Placeholder for List View (UITableView,UICollectionView).
 
 
 ##### One Line Use 
-    _tableView.needPlaceholderView = YES;
+    _tableView.needPlaceholderView = YES;   //the same as UICollectionView
     
 
 Or Use Below
@@ -53,8 +54,8 @@ Or Use Below
 [_tableView fm_emptyCoverName:@"fm_placeholder_nil" emptyTips:@" "];
 [_tableView fm_backgroundColor:[UIColor colorWithRed:0.91 green:0.90 blue:0.90 alpha:1.00] tipsTextColor:UIColor.redColor tipsFont:nil];
 [_tableView fm_coverCenterYOffset:-80 coverSize:CGSizeMake(90, 120) coverSpaceToTips:20];
+// the same as UICollectionView
 ```
-(the same as UICollectionView)
 <br/>
 
 ##### Click Reload Handle
@@ -77,12 +78,12 @@ Instead of giving me star, it is better to throw a bug to me!
     - Email: yfmingo@163.com.
 - Hope to improve this project together, let it become more powerful, able to meet the needs of most users!
 
-### 0x006 QQ chat room
+### 0x006 QQ Chat Room
 ![](https://ws3.sinaimg.cn/small/006tNc79gy1fz8aavckscj30f10kl0us.jpg)
 
 ### 0x007 Requirements
 - iOS 9.0 or later
-- Xcode 7.0 or later
+- Xcode 9.0 or later
 
 ### 0x008 [Licenses](https://github.com/yfming93/FMListPlaceholder/blob/master/LICENSE)
 **All source code is licensed under the MIT [License](https://github.com/yfming93/FMListPlaceholder/blob/master/LICENSE).**
