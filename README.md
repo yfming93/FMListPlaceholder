@@ -24,11 +24,11 @@ A delightful Placeholder for List View (UITableView,UICollectionView).
 
 ### 0x003 How to use
 - Use CocoaPods:
-    - pod "FMListPlaceholder"
-    - Import the main file：#import <FMListPlaceholder.h>
+    - write `pod "FMListPlaceholder"` in the `Podfile` file.
+    - Import the main file：`#import <FMListPlaceholder.h>`
 - Manual import：
-    - Drag All files in the FMListPlaceholder folder to project
-    - Import the main file：#import "FMListPlaceholder.h"
+    - Drag All files in the `FMListPlaceholder` folder to project.
+    - Import the main file：`#import "FMListPlaceholder.h"`
 
 
 ##### One Line Use 
