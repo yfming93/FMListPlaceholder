@@ -9,7 +9,7 @@
 
 A delightful Placeholder for List View (UITableView,UICollectionView).
 
-**One line of code handles empty list placeholder logic.**
+**One line of code handle empty list placeholder logic.**
 
 ### 0x001 Different From Other Similar：
 
