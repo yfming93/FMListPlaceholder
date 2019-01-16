@@ -72,7 +72,9 @@ _tableView.reloadBlock = ^(UIScrollView *listView) {
 - If you have any questions during the process or want more interfaces to customize，you can issues me!
 Instead of giving me star, it is better to throw a bug to me!
 - If you want to participate in the maintenance of this project or have a good design style, welcome to pull request!
-- If you feel slightly discomfort in use, please contact me QQ:928289877 or Email:yfmingo@163.com.
+- If you feel slightly discomfort in use, please contact me. 
+    - BLOG SITE: [www.yfmingo.cn](www.yfmingo.cn)  
+    - Email: yfmingo@163.com.
 - Hope to improve this project together, let it become more powerful, able to meet the needs of most users!
 
 ### 0x006 QQ chat room
