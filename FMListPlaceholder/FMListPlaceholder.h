@@ -1,6 +1,6 @@
 //
 //  FMListPlaceholder.h
-//  FMListPlaceholderDemo
+//  FMListPlaceholderExample
 //
 //  Created by Mingo on 2018/8/9.
 //  Copyright © 2017年 袁凤鸣. All rights reserved.
@@ -18,11 +18,11 @@
 @property (nonatomic, strong) UIColor *defaultBackgroundColor;
 
 /// 设置默认的占位图 背景色
-@property (nonatomic, strong) NSString *defaultCoverName;
+@property (nonatomic, copy) NSString *defaultCoverName;
 /// 设置默认的占位图 大小
 @property (nonatomic, assign) CGSize defaultCoverSize;
 /// 设置默认的占位提示文字 内容
-@property (nonatomic, strong) NSString *defaultTips;
+@property (nonatomic, copy) NSString *defaultTips;
 /// 设置默认的占位提示文字 颜色
 @property (nonatomic, strong) UIColor *defaultTipsTextColor;
 /// 设置默认的占位提示文字 字体

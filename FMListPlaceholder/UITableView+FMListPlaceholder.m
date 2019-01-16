@@ -1,6 +1,6 @@
 //
 //  UITableView+FMListPlaceholder.m
-//  FMListPlaceholderDemo
+//  FMListPlaceholderExample
 //
 //  Created by Mingo on 2018/8/9.
 //  Copyright © 2017年 袁凤鸣. All rights reserved.

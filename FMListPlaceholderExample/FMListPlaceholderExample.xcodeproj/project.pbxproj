@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DBC3CDD8404260C7213C812 /* libPods-FMListPlaceholderExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DB393F7680C6991D34C634 /* libPods-FMListPlaceholderExample.a */; };
+		DAA77B0021EED7D3002EAC6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77AFF21EED7D3002EAC6B /* AppDelegate.m */; };
+		DAA77B0621EED7D3002EAC6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA77B0421EED7D3002EAC6B /* Main.storyboard */; };
+		DAA77B0821EED7D4002EAC6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA77B0721EED7D4002EAC6B /* Assets.xcassets */; };
+		DAA77B0B21EED7D4002EAC6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA77B0921EED7D4002EAC6B /* LaunchScreen.storyboard */; };
+		DAA77B0E21EED7D4002EAC6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B0D21EED7D4002EAC6B /* main.m */; };
+		DAA77B1821EED7D4002EAC6B /* FMListPlaceholderExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B1721EED7D4002EAC6B /* FMListPlaceholderExampleTests.m */; };
+		DAA77B2321EED7D4002EAC6B /* FMListPlaceholderExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B2221EED7D4002EAC6B /* FMListPlaceholderExampleUITests.m */; };
+		DAA77B3521EED8B2002EAC6B /* FMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B3321EED8B2002EAC6B /* FMBaseViewController.m */; };
+		DAA77B3D21EED8C3002EAC6B /* FMCollectionViewPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B3621EED8C2002EAC6B /* FMCollectionViewPlaceholder.m */; };
+		DAA77B3E21EED8C3002EAC6B /* FMListPlaceholderExample.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B3721EED8C2002EAC6B /* FMListPlaceholderExample.m */; };
+		DAA77B3F21EED8C3002EAC6B /* FMListPlaceholderExample.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA77B3A21EED8C2002EAC6B /* FMListPlaceholderExample.xib */; };
+		DAA77B4021EED8C3002EAC6B /* FMTableViewPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA77B3B21EED8C2002EAC6B /* FMTableViewPlaceholder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAA77B1421EED7D4002EAC6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAA77AF321EED7D3002EAC6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAA77AFA21EED7D3002EAC6B;
+			remoteInfo = FMListPlaceholderExample;
+		};
+		DAA77B1F21EED7D4002EAC6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAA77AF321EED7D3002EAC6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAA77AFA21EED7D3002EAC6B;
+			remoteInfo = FMListPlaceholderExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68DB393F7680C6991D34C634 /* libPods-FMListPlaceholderExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FMListPlaceholderExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8089991299BA47D65F4D39C6 /* Pods-FMListPlaceholderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMListPlaceholderExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMListPlaceholderExample/Pods-FMListPlaceholderExample.debug.xcconfig"; sourceTree = "<group>"; };
+		8EB196EBD51A4E935C8B17A3 /* Pods-FMListPlaceholderExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMListPlaceholderExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMListPlaceholderExample/Pods-FMListPlaceholderExample.release.xcconfig"; sourceTree = "<group>"; };
+		DAA77AFB21EED7D3002EAC6B /* FMListPlaceholderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMListPlaceholderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA77AFE21EED7D3002EAC6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAA77AFF21EED7D3002EAC6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAA77B0521EED7D3002EAC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAA77B0721EED7D4002EAC6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAA77B0A21EED7D4002EAC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAA77B0C21EED7D4002EAC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA77B0D21EED7D4002EAC6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAA77B1321EED7D4002EAC6B /* FMListPlaceholderExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMListPlaceholderExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA77B1721EED7D4002EAC6B /* FMListPlaceholderExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMListPlaceholderExampleTests.m; sourceTree = "<group>"; };
+		DAA77B1921EED7D4002EAC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA77B1E21EED7D4002EAC6B /* FMListPlaceholderExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMListPlaceholderExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA77B2221EED7D4002EAC6B /* FMListPlaceholderExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMListPlaceholderExampleUITests.m; sourceTree = "<group>"; };
+		DAA77B2421EED7D4002EAC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA77B3321EED8B2002EAC6B /* FMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMBaseViewController.m; sourceTree = "<group>"; };
+		DAA77B3421EED8B2002EAC6B /* FMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMBaseViewController.h; sourceTree = "<group>"; };
+		DAA77B3621EED8C2002EAC6B /* FMCollectionViewPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMCollectionViewPlaceholder.m; path = ../../FMListPlaceholderDemo/FMListPlaceholderDemo/FMCollectionViewPlaceholder.m; sourceTree = "<group>"; };
+		DAA77B3721EED8C2002EAC6B /* FMListPlaceholderExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMListPlaceholderExample.m; path = ../../FMListPlaceholderDemo/FMListPlaceholderDemo/FMListPlaceholderExample.m; sourceTree = "<group>"; };
+		DAA77B3821EED8C2002EAC6B /* FMTableViewPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMTableViewPlaceholder.h; path = ../../FMListPlaceholderDemo/FMListPlaceholderDemo/FMTableViewPlaceholder.h; sourceTree = "<group>"; };
+		DAA77B3921EED8C2002EAC6B /* FMListPlaceholderExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMListPlaceholderExample.h; path = ../../FMListPlaceholderDemo/FMListPlaceholderDemo/FMListPlaceholderExample.h; sourceTree = "<group>"; };
+		DAA77B3A21EED8C2002EAC6B /* FMListPlaceholderExample.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FMListPlaceholderExample.xib; path = ../../FMListPlaceholderDemo/FMListPlaceholderDemo/FMListPlaceholderExample.xib; sourceTree = "<group>"; };
+		DAA77B3B21EED8C2002EAC6B /* FMTableViewPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMTableViewPlaceholder.m; path = ../../FMListPlaceholderDemo/FMListPlaceholderDemo/FMTableViewPlaceholder.m; sourceTree = "<group>"; };
+		DAA77B3C21EED8C2002EAC6B /* FMCollectionViewPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMCollectionViewPlaceholder.h; path = ../../FMListPlaceholderDemo/FMListPlaceholderDemo/FMCollectionViewPlaceholder.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAA77AF821EED7D3002EAC6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBC3CDD8404260C7213C812 /* libPods-FMListPlaceholderExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA77B1021EED7D4002EAC6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA77B1B21EED7D4002EAC6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4665A040D6BFB2B12E314E16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8089991299BA47D65F4D39C6 /* Pods-FMListPlaceholderExample.debug.xcconfig */,
+				8EB196EBD51A4E935C8B17A3 /* Pods-FMListPlaceholderExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C620D06C45D4B64CC029DE65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68DB393F7680C6991D34C634 /* libPods-FMListPlaceholderExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAA77AF221EED7D3002EAC6B = {
+			isa = PBXGroup;
+			children = (
+				DAA77AFD21EED7D3002EAC6B /* FMListPlaceholderExample */,
+				DAA77B1621EED7D4002EAC6B /* FMListPlaceholderExampleTests */,
+				DAA77B2121EED7D4002EAC6B /* FMListPlaceholderExampleUITests */,
+				DAA77AFC21EED7D3002EAC6B /* Products */,
+				4665A040D6BFB2B12E314E16 /* Pods */,
+				C620D06C45D4B64CC029DE65 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DAA77AFC21EED7D3002EAC6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAA77AFB21EED7D3002EAC6B /* FMListPlaceholderExample.app */,
+				DAA77B1321EED7D4002EAC6B /* FMListPlaceholderExampleTests.xctest */,
+				DAA77B1E21EED7D4002EAC6B /* FMListPlaceholderExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAA77AFD21EED7D3002EAC6B /* FMListPlaceholderExample */ = {
+			isa = PBXGroup;
+			children = (
+				DAA77B3221EED8B2002EAC6B /* Base */,
+				DAA77B3C21EED8C2002EAC6B /* FMCollectionViewPlaceholder.h */,
+				DAA77B3621EED8C2002EAC6B /* FMCollectionViewPlaceholder.m */,
+				DAA77B3821EED8C2002EAC6B /* FMTableViewPlaceholder.h */,
+				DAA77B3B21EED8C2002EAC6B /* FMTableViewPlaceholder.m */,
+				DAA77B3921EED8C2002EAC6B /* FMListPlaceholderExample.h */,
+				DAA77B3721EED8C2002EAC6B /* FMListPlaceholderExample.m */,
+				DAA77B3A21EED8C2002EAC6B /* FMListPlaceholderExample.xib */,
+				DAA77B3121EED874002EAC6B /* Support Files */,
+			);
+			path = FMListPlaceholderExample;
+			sourceTree = "<group>";
+		};
+		DAA77B1621EED7D4002EAC6B /* FMListPlaceholderExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAA77B1721EED7D4002EAC6B /* FMListPlaceholderExampleTests.m */,
+				DAA77B1921EED7D4002EAC6B /* Info.plist */,
+			);
+			path = FMListPlaceholderExampleTests;
+			sourceTree = "<group>";
+		};
+		DAA77B2121EED7D4002EAC6B /* FMListPlaceholderExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAA77B2221EED7D4002EAC6B /* FMListPlaceholderExampleUITests.m */,
+				DAA77B2421EED7D4002EAC6B /* Info.plist */,
+			);
+			path = FMListPlaceholderExampleUITests;
+			sourceTree = "<group>";
+		};
+		DAA77B3121EED874002EAC6B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAA77AFE21EED7D3002EAC6B /* AppDelegate.h */,
+				DAA77AFF21EED7D3002EAC6B /* AppDelegate.m */,
+				DAA77B0721EED7D4002EAC6B /* Assets.xcassets */,
+				DAA77B0C21EED7D4002EAC6B /* Info.plist */,
+				DAA77B0921EED7D4002EAC6B /* LaunchScreen.storyboard */,
+				DAA77B0D21EED7D4002EAC6B /* main.m */,
+				DAA77B0421EED7D3002EAC6B /* Main.storyboard */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		DAA77B3221EED8B2002EAC6B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DAA77B3421EED8B2002EAC6B /* FMBaseViewController.h */,
+				DAA77B3321EED8B2002EAC6B /* FMBaseViewController.m */,
+			);
+			name = Base;
+			path = ../../FMListPlaceholderDemo/FMListPlaceholderDemo/Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAA77AFA21EED7D3002EAC6B /* FMListPlaceholderExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA77B2721EED7D4002EAC6B /* Build configuration list for PBXNativeTarget "FMListPlaceholderExample" */;
+			buildPhases = (
+				6D622201FB93F53C43867B1A /* [CP] Check Pods Manifest.lock */,
+				DAA77AF721EED7D3002EAC6B /* Sources */,
+				DAA77AF821EED7D3002EAC6B /* Frameworks */,
+				DAA77AF921EED7D3002EAC6B /* Resources */,
+				56E273EE337AA6BDDC8D5BC1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMListPlaceholderExample;
+			productName = FMListPlaceholderExample;
+			productReference = DAA77AFB21EED7D3002EAC6B /* FMListPlaceholderExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAA77B1221EED7D4002EAC6B /* FMListPlaceholderExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA77B2A21EED7D4002EAC6B /* Build configuration list for PBXNativeTarget "FMListPlaceholderExampleTests" */;
+			buildPhases = (
+				DAA77B0F21EED7D4002EAC6B /* Sources */,
+				DAA77B1021EED7D4002EAC6B /* Frameworks */,
+				DAA77B1121EED7D4002EAC6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAA77B1521EED7D4002EAC6B /* PBXTargetDependency */,
+			);
+			name = FMListPlaceholderExampleTests;
+			productName = FMListPlaceholderExampleTests;
+			productReference = DAA77B1321EED7D4002EAC6B /* FMListPlaceholderExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAA77B1D21EED7D4002EAC6B /* FMListPlaceholderExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA77B2D21EED7D4002EAC6B /* Build configuration list for PBXNativeTarget "FMListPlaceholderExampleUITests" */;
+			buildPhases = (
+				DAA77B1A21EED7D4002EAC6B /* Sources */,
+				DAA77B1B21EED7D4002EAC6B /* Frameworks */,
+				DAA77B1C21EED7D4002EAC6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAA77B2021EED7D4002EAC6B /* PBXTargetDependency */,
+			);
+			name = FMListPlaceholderExampleUITests;
+			productName = FMListPlaceholderExampleUITests;
+			productReference = DAA77B1E21EED7D4002EAC6B /* FMListPlaceholderExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAA77AF321EED7D3002EAC6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "袁凤鸣";
+				TargetAttributes = {
+					DAA77AFA21EED7D3002EAC6B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					DAA77B1221EED7D4002EAC6B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DAA77AFA21EED7D3002EAC6B;
+					};
+					DAA77B1D21EED7D4002EAC6B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DAA77AFA21EED7D3002EAC6B;
+					};
+				};
+			};
+			buildConfigurationList = DAA77AF621EED7D3002EAC6B /* Build configuration list for PBXProject "FMListPlaceholderExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAA77AF221EED7D3002EAC6B;
+			productRefGroup = DAA77AFC21EED7D3002EAC6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAA77AFA21EED7D3002EAC6B /* FMListPlaceholderExample */,
+				DAA77B1221EED7D4002EAC6B /* FMListPlaceholderExampleTests */,
+				DAA77B1D21EED7D4002EAC6B /* FMListPlaceholderExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAA77AF921EED7D3002EAC6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA77B0B21EED7D4002EAC6B /* LaunchScreen.storyboard in Resources */,
+				DAA77B3F21EED8C3002EAC6B /* FMListPlaceholderExample.xib in Resources */,
+				DAA77B0821EED7D4002EAC6B /* Assets.xcassets in Resources */,
+				DAA77B0621EED7D3002EAC6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA77B1121EED7D4002EAC6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA77B1C21EED7D4002EAC6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56E273EE337AA6BDDC8D5BC1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FMListPlaceholderExample/Pods-FMListPlaceholderExample-resources.sh",
+				"${PODS_ROOT}/../../FMListPlaceholder/FMListPlaceholderResources.bundle/fm_emptylist_placeholder@2x.png",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/fm_emptylist_placeholder@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FMListPlaceholderExample/Pods-FMListPlaceholderExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D622201FB93F53C43867B1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FMListPlaceholderExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAA77AF721EED7D3002EAC6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA77B4021EED8C3002EAC6B /* FMTableViewPlaceholder.m in Sources */,
+				DAA77B0E21EED7D4002EAC6B /* main.m in Sources */,
+				DAA77B3D21EED8C3002EAC6B /* FMCollectionViewPlaceholder.m in Sources */,
+				DAA77B3E21EED8C3002EAC6B /* FMListPlaceholderExample.m in Sources */,
+				DAA77B3521EED8B2002EAC6B /* FMBaseViewController.m in Sources */,
+				DAA77B0021EED7D3002EAC6B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA77B0F21EED7D4002EAC6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA77B1821EED7D4002EAC6B /* FMListPlaceholderExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA77B1A21EED7D4002EAC6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA77B2321EED7D4002EAC6B /* FMListPlaceholderExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAA77B1521EED7D4002EAC6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAA77AFA21EED7D3002EAC6B /* FMListPlaceholderExample */;
+			targetProxy = DAA77B1421EED7D4002EAC6B /* PBXContainerItemProxy */;
+		};
+		DAA77B2021EED7D4002EAC6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAA77AFA21EED7D3002EAC6B /* FMListPlaceholderExample */;
+			targetProxy = DAA77B1F21EED7D4002EAC6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAA77B0421EED7D3002EAC6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAA77B0521EED7D3002EAC6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAA77B0921EED7D4002EAC6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAA77B0A21EED7D4002EAC6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAA77B2521EED7D4002EAC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DAA77B2621EED7D4002EAC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAA77B2821EED7D4002EAC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8089991299BA47D65F4D39C6 /* Pods-FMListPlaceholderExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SV98J7C3Y8;
+				INFOPLIST_FILE = FMListPlaceholderExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Mingo.FMListPlaceholderExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAA77B2921EED7D4002EAC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EB196EBD51A4E935C8B17A3 /* Pods-FMListPlaceholderExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SV98J7C3Y8;
+				INFOPLIST_FILE = FMListPlaceholderExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Mingo.FMListPlaceholderExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAA77B2B21EED7D4002EAC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SV98J7C3Y8;
+				INFOPLIST_FILE = FMListPlaceholderExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Mingo.FMListPlaceholderExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FMListPlaceholderExample.app/FMListPlaceholderExample";
+			};
+			name = Debug;
+		};
+		DAA77B2C21EED7D4002EAC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SV98J7C3Y8;
+				INFOPLIST_FILE = FMListPlaceholderExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Mingo.FMListPlaceholderExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FMListPlaceholderExample.app/FMListPlaceholderExample";
+			};
+			name = Release;
+		};
+		DAA77B2E21EED7D4002EAC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SV98J7C3Y8;
+				INFOPLIST_FILE = FMListPlaceholderExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Mingo.FMListPlaceholderExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FMListPlaceholderExample;
+			};
+			name = Debug;
+		};
+		DAA77B2F21EED7D4002EAC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SV98J7C3Y8;
+				INFOPLIST_FILE = FMListPlaceholderExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Mingo.FMListPlaceholderExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FMListPlaceholderExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAA77AF621EED7D3002EAC6B /* Build configuration list for PBXProject "FMListPlaceholderExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA77B2521EED7D4002EAC6B /* Debug */,
+				DAA77B2621EED7D4002EAC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA77B2721EED7D4002EAC6B /* Build configuration list for PBXNativeTarget "FMListPlaceholderExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA77B2821EED7D4002EAC6B /* Debug */,
+				DAA77B2921EED7D4002EAC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA77B2A21EED7D4002EAC6B /* Build configuration list for PBXNativeTarget "FMListPlaceholderExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA77B2B21EED7D4002EAC6B /* Debug */,
+				DAA77B2C21EED7D4002EAC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA77B2D21EED7D4002EAC6B /* Build configuration list for PBXNativeTarget "FMListPlaceholderExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA77B2E21EED7D4002EAC6B /* Debug */,
+				DAA77B2F21EED7D4002EAC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAA77AF321EED7D3002EAC6B /* Project object */;
+}
