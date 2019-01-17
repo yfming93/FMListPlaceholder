@@ -6,7 +6,7 @@
 [![cocoapods](https://img.shields.io/badge/cocoapods-supported-4BC51D.svg?style=plastic)](https://cocoapods.org/pods/FMListPlaceholder)
 [![support](https://img.shields.io/badge/support-iOS9%2B-orange.svg)](#) 
 
-[中文说明](https://github.com/yfming93/FMListPlaceholder/blob/master/README_Chinese.md)
+#### [**中文说明**](https://github.com/yfming93/FMListPlaceholder/blob/master/README_Chinese.md)
 
 
 A delightful Placeholder for List View (UITableView, UICollectionView).
