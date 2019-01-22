@@ -17,7 +17,7 @@
 /// 设置默认的占位图 背景色
 @property (nonatomic, strong) UIColor *defaultBackgroundColor;
 
-/// 设置默认的占位图 背景色
+/// 设置默认的占位图 图片名称
 @property (nonatomic, copy) NSString *defaultCoverName;
 /// 设置默认的占位图 大小
 @property (nonatomic, assign) CGSize defaultCoverSize;
