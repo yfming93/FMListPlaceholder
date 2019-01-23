@@ -81,6 +81,28 @@
                                   kTipsH);
 }
 
+-(void)setDefaultPlaceholder:(UIView *)defaultPlaceholder {
+    _defaultPlaceholder = defaultPlaceholder;
+    for (UIView *v in self.subviews) {
+        [v removeFromSuperview];
+    }
+    
+    [self addSubview:_defaultPlaceholder];
+    _defaultPlaceholder.center = self.center;
+    _defaultPlaceholder.userInteractionEnabled = YES;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)];
+    [_defaultPlaceholder addGestureRecognizer:tap];
+    
+    if (self.coverCenterYOffset) {
+         _defaultPlaceholder.center = CGPointMake(self.center.x, self.center.y - _coverSpaceToTips/2);
+    }
+    
+    if (self.coverSize.width) {
+        [_defaultPlaceholder setBounds:CGRectMake(0, 0, self.coverSize.width, self.coverSize.height)];
+    }
+}
+
 - (UIImageView *)emptyCover{
     if (!_emptyCover) {
         _emptyCover =[[UIImageView alloc] init];
@@ -145,19 +167,31 @@
         self.reloadClickBlock();
         
         [UIView animateWithDuration:1.0 animations:^{
-            self.emptyCover.alpha = 0.5;
-            self.emptyTips.alpha = 0.5;
+                self.emptyCover.alpha = 0.5;
+                self.emptyTips.alpha = 0.5;
+                FMListPlaceholder.sharedInstance.defaultPlaceholder.alpha = 0.5;
             [UIView animateWithDuration:0.5 animations:^{
                 self.emptyCover.alpha = 1.0;
                 self.emptyTips.alpha = 1.0;
+                FMListPlaceholder.sharedInstance.defaultPlaceholder.alpha = 1.0;
             }];
         }];
     }
 }
 
 - (void)createUI {
-    [self addSubview:self.emptyCover];
-    [self addSubview:self.emptyTips];
+    if (FMListPlaceholder.sharedInstance.defaultPlaceholder != nil) {
+        [self addSubview:FMListPlaceholder.sharedInstance.defaultPlaceholder];
+        FMListPlaceholder.sharedInstance.defaultPlaceholder.center = self.center;
+        FMListPlaceholder.sharedInstance.defaultPlaceholder.userInteractionEnabled = YES;
+        
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)];
+        [FMListPlaceholder.sharedInstance.defaultPlaceholder addGestureRecognizer:tap];
+        
+    } else {
+        [self addSubview:self.emptyCover];
+        [self addSubview:self.emptyTips];
+    }
 }
 
 @end

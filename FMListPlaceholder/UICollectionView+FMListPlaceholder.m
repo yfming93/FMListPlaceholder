@@ -108,6 +108,12 @@ static void *kFMPlaceholderView = &kFMPlaceholderView;
     [self fm_emptyCoverName:emptyCoverName tips:emptyTips backgroundColor:nil tipsTextColor:nil tipsFont:nil coverCenterYOffset:nil coverSize:CGSizeZero coverSpaceToTips:nil];
 }
 
+- (void)fm_defaultPlaceholder:(UIView *)defaultPlaceholder {
+    if (defaultPlaceholder != nil) {
+        self.placeholderView.defaultPlaceholder = defaultPlaceholder;
+    }
+}
+
 - (void)fm_emptyCoverName:(NSString *)emptyCoverName tips:(NSString *)tips backgroundColor:(UIColor *)backgroundColor tipsTextColor:(UIColor *)tipsTextColor tipsFont:(UIFont *)tipsFont coverCenterYOffset:(NSNumber *)coverCenterYOffset coverSize:(CGSize)coverSize coverSpaceToTips:(NSNumber *)coverSpaceToTips {
     
     if (emptyCoverName.length) {

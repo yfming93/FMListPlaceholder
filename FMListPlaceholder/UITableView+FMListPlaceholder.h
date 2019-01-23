@@ -41,4 +41,6 @@ typedef void(^reloadBlock)(UIScrollView *listView);
  */
 - (void)fm_emptyCoverName:(NSString *)emptyCoverName emptyTips:(NSString *)emptyTips;
 
+/// 设置自定义的占位图 [之前设置过的 coverSize 或 coverCenterYOffset 任会生效] 优先级最高
+- (void)fm_defaultPlaceholder:(UIView *)defaultPlaceholder;
 @end

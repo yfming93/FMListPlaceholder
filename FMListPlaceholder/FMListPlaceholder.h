@@ -33,6 +33,10 @@
 /// 设置默认的占位图 与 文字之间的距离
 @property (nonatomic, assign) CGFloat coverSpaceToTips;
 
+/// 设置默认的 自定义 占位图
+@property (nonatomic, strong) UIView *defaultPlaceholder;
+
+
 /// 初始化全局管家
 + (instancetype)sharedInstance;
 

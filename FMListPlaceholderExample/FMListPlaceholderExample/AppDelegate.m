@@ -18,8 +18,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    /// 设置全局默认属性
     //    [FMListPlaceholder fm_defaultBackgroundColor:UIColor.whiteColor coverName:@"xxx" tips:@"Sorroy,nil here!" tipsTextColor:UIColor.grayColor tipsFont:[UIFont systemFontOfSize:16] coverSize:CGSizeZero coverCenterYOffset:-30 coverSpaceToTips:10];
+    
+//    UIView *vv = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 90, 120)];
+//    vv.backgroundColor = UIColor.blueColor;
+//    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 90, 90, 30)];
+//    [vv addSubview:btn];
+//    [btn setTitle:@"哈哈哈" forState:0];
+//    [vv addSubview:btn];
+//    /// 设置全局默认的 自定义 占位图
+//    FMListPlaceholder.sharedInstance.defaultPlaceholder = vv;
+    
+    /// 更多用法见 FMTableViewPlaceholder 文件
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[FMListPlaceholderExample alloc] init]];

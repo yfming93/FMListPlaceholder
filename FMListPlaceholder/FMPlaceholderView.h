@@ -18,4 +18,6 @@
 @property (nonatomic, assign) CGSize coverSize;
 @property (nonatomic, assign) CGFloat coverSpaceToTips;
 @property (nonatomic, assign) CGFloat coverCenterYOffset;
+/// 设置默认的 自定义 占位图
+@property (nonatomic, strong) UIView *defaultPlaceholder;
 @end

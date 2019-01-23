@@ -95,18 +95,26 @@ static void *kFMPlaceholderView = &kFMPlaceholderView;
 }
 
 - (void)fm_coverCenterYOffset:(CGFloat)coverCenterYOffset coverSize:(CGSize)coverSize coverSpaceToTips:(CGFloat)coverSpaceToTips {
-    [self fm_emptyCoverName:nil tips:nil backgroundColor:nil tipsTextColor:nil tipsFont:nil coverCenterYOffset:@(coverCenterYOffset) coverSize:coverSize coverSpaceToTips:@(coverSpaceToTips)];
+    [self fm_emptyCoverName:nil tips:nil backgroundColor:nil tipsTextColor:nil tipsFont:nil coverCenterYOffset:@(coverCenterYOffset) coverSize:coverSize coverSpaceToTips:@(coverSpaceToTips) ];
 }
 
 - (void)fm_backgroundColor:(UIColor *)backgroundColor tipsTextColor:(UIColor *)tipsTextColor tipsFont:(UIFont *)tipsFont {
-    [self fm_emptyCoverName:nil tips:nil backgroundColor:backgroundColor tipsTextColor:tipsTextColor tipsFont:tipsFont coverCenterYOffset:nil coverSize:CGSizeZero coverSpaceToTips:nil];
+    [self fm_emptyCoverName:nil tips:nil backgroundColor:backgroundColor tipsTextColor:tipsTextColor tipsFont:tipsFont coverCenterYOffset:nil coverSize:CGSizeZero coverSpaceToTips:nil ];
 }
 
 - (void)fm_emptyCoverName:(NSString *)emptyCoverName emptyTips:(NSString *)emptyTips {
-    [self fm_emptyCoverName:emptyCoverName tips:emptyTips backgroundColor:nil tipsTextColor:nil tipsFont:nil coverCenterYOffset:nil coverSize:CGSizeZero coverSpaceToTips:nil];
+    [self fm_emptyCoverName:emptyCoverName tips:emptyTips backgroundColor:nil tipsTextColor:nil tipsFont:nil coverCenterYOffset:nil coverSize:CGSizeZero coverSpaceToTips:nil ];
+}
+
+- (void)fm_defaultPlaceholder:(UIView *)defaultPlaceholder {
+    if (defaultPlaceholder != nil) {
+        self.placeholderView.defaultPlaceholder = defaultPlaceholder;
+    }
 }
 
 - (void)fm_emptyCoverName:(NSString *)emptyCoverName tips:(NSString *)tips backgroundColor:(UIColor *)backgroundColor tipsTextColor:(UIColor *)tipsTextColor tipsFont:(UIFont *)tipsFont coverCenterYOffset:(NSNumber *)coverCenterYOffset coverSize:(CGSize)coverSize coverSpaceToTips:(NSNumber *)coverSpaceToTips {
+    
+    
     
     if (emptyCoverName.length) {
         self.placeholderView.emptyCover.image = [UIImage imageNamed:emptyCoverName];

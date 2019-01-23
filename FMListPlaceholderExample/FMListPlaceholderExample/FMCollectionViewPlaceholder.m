@@ -62,6 +62,8 @@ static NSString *cellID = @"UICollectionView";
             weakSelf.rowNum = 15;
             [listView.mj_header beginRefreshing];
         };
+        
+        /// 更多用法见 FMTableViewPlaceholder 文件
     }
     return _collectionView;
 }
