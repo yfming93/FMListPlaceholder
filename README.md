@@ -19,6 +19,7 @@ A delightful Placeholder for List View (UITableView, UICollectionView).
 - Simple, efficient and practical, one line code can be integrated;
 - Provide a more comprehensive and highly customized effect.
 - The default effect can be replaced with one line code. Set your own global default effects. You can also customize the effect again in a special list.
+- Support user-defined views as  the placeholder.
 
 ### 0x002 Renderings
 ![](https://ws1.sinaimg.cn/large/006tNc79gy1fz8jghf5d0g30hj0dsx6p.gif)
@@ -80,14 +81,42 @@ Instead of giving me star, it is better to throw a bug to me!
     - Email: yfmingo@163.com.
 - Hope to improve this project together, let it become more powerful, able to meet the needs of most users!
 
-### 0x006 QQ Chat Room
+### 0x006 Change Log
+#### 2019.01.23 V1.1.0
+
+- `[+]` Support custom views as the placeholder;
+- `[+]` Added some usage examples
+
+### 0x007 QQ Chat Room
 ![](https://ws3.sinaimg.cn/small/006tNc79gy1fz8aavckscj30f10kl0us.jpg)
 
-### 0x007 Requirements
+### 0x008 Requirements
 - iOS 9.0 or later
 - Xcode 9.0 or later
 
-### 0x008 [Licenses](https://github.com/yfming93/FMListPlaceholder/blob/master/LICENSE)
+### 0x009 [Licenses](https://github.com/yfming93/FMListPlaceholder/blob/master/LICENSE)
 **All source code is licensed under the MIT [License](https://github.com/yfming93/FMListPlaceholder/blob/master/LICENSE).**
 
+
+> MIT License
+
+> Copyright (c) 2019 Fleeming
+
+> Permission is hereby granted, free of charge, to any person obtaining a copy
+> of this software and associated documentation files (the "Software"), to deal
+> in the Software without restriction, including without limitation the rights
+> to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+> copies of the Software, and to permit persons to whom the Software is
+> furnished to do so, subject to the following conditions:
+
+> The above copyright notice and this permission notice shall be included in all
+> copies or substantial portions of the Software.
+
+> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+> IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+> FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+> AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+> LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+> OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+> SOFTWARE.
 
