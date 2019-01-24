@@ -19,7 +19,7 @@ A delightful Placeholder for List View (UITableView, UICollectionView).
 - Simple, efficient and practical, one line code can be integrated;
 - Provide a more comprehensive and highly customized effect.
 - The default effect can be replaced with one line code. Set your own global default effects. You can also customize the effect again in a special list.
-- Support user-defined views as  the placeholder.
+- Support custom views as the placeholder.
 
 ### 0x002 Renderings
 ![](https://ws1.sinaimg.cn/large/006tNc79gy1fz8jghf5d0g30hj0dsx6p.gif)
