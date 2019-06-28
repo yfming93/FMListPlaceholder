@@ -105,13 +105,13 @@
 
 - (UIImageView *)emptyCover{
     if (!_emptyCover) {
-        if (!_defaultEmptyCoverName.length) {
+        _emptyCover = UIImageView.alloc.init;
+        if (_defaultEmptyCoverName.length) {
+            [_emptyCover setImage:[UIImage imageNamed:_defaultEmptyCoverName]];
+        }else{
             UIImage *ima = [NSBundle fm_coverImage];
             [_emptyCover setImage:ima];
-        }else{
-            [_emptyCover setImage:[UIImage imageNamed:_defaultEmptyCoverName]];
         }
-        
         _emptyCover.contentMode =  UIViewContentModeScaleToFill;
         
         CGSize coverSize = CGSizeMake(self.frame.size.width/3, self.frame.size.width/3);
