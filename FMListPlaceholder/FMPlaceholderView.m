@@ -105,7 +105,6 @@
 
 - (UIImageView *)emptyCover{
     if (!_emptyCover) {
-        _emptyCover =[[UIImageView alloc] initWithImage:[UIImage imageNamed:_defaultEmptyCoverName]];
         if (!_defaultEmptyCoverName.length) {
             UIImage *ima = [NSBundle fm_coverImage];
             [_emptyCover setImage:ima];
