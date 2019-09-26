@@ -118,16 +118,15 @@
         if (FMListPlaceholder.sharedInstance.defaultCoverSize.width) {
             coverSize = FMListPlaceholder.sharedInstance.defaultCoverSize;
         }
-        
         _emptyCover.frame = CGRectMake((self.frame.size.width - coverSize.width)/2,
-                                       (self.frame.size.height - coverSize.height) - _coverSpaceToTips - kTipsH,
+                                       0,
                                        coverSize.width,
                                        coverSize.height);
         CGFloat OffsetY = FMListPlaceholder.sharedInstance.coverCenterYOffset;
         if (self.coverCenterYOffset) {
             OffsetY = self.coverCenterYOffset;
         }
-        _emptyCover.center = CGPointMake(self.center.x, self.center.y - _coverSpaceToTips/2 - kTipsH/2 + OffsetY );
+        _emptyCover.center = CGPointMake(self.center.x, self.frame.size.height/2 - _coverSpaceToTips/2 - kTipsH/2 + OffsetY );
         _emptyCover.userInteractionEnabled = YES;
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)];
         [_emptyCover addGestureRecognizer:tap];

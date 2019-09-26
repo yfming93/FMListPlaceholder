@@ -34,7 +34,7 @@ static void *kFMPlaceholderView = &kFMPlaceholderView;
 - (FMPlaceholderView *)placeholderView {
     FMPlaceholderView *placeholderView = objc_getAssociatedObject(self, kFMPlaceholderView);
     if (!placeholderView) {
-        placeholderView = [[FMPlaceholderView alloc]initWithFrame:CGRectMake(0, self.tableHeaderView.frame.size.height, self.frame.size.width, self.frame.size.height -self.tableHeaderView.frame.size.height -  self.tableFooterView.frame.size.height)];
+        placeholderView = [[FMPlaceholderView alloc]initWithFrame:CGRectMake(0, self.tableHeaderView.frame.size.height, self.frame.size.width, self.frame.size.height -self.tableHeaderView.frame.size.height)];
         __weak typeof(self) weakSelf = self;
         placeholderView.reloadClickBlock = ^{
             if (weakSelf.reloadBlock) {
