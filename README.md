@@ -6,41 +6,41 @@
 [![cocoapods](https://img.shields.io/badge/cocoapods-supported-4BC51D.svg?style=plastic)](https://cocoapods.org/pods/FMListPlaceholder)
 [![support](https://img.shields.io/badge/support-iOS9%2B-orange.svg)](#) 
 
-#### [**中文说明**](https://github.com/yfming93/FMListPlaceholder/blob/master/README_Chinese.md)
+[There is an English version of README here. just click it！](https://github.com/yfming93/FMListPlaceholder/blob/master/README_English.md)
 
 
-A delightful Placeholder for List View (UITableView, UICollectionView).
+一个优雅的占位图解决方案。适用于 UITableView 和 UICollectionView。
 
-**One line code handle empty list placeholder logic.**
+**一行代码处理空列表占位图逻辑**
 
-### 0x001 Different From Other Similar：
+### 0x001 与其他的同类三方库对比的优点：
 
-- Placeholders are not displayed at first time while you enter the list. The logic is processed when the list is refreshed again after network request is completed.
-- Simple, efficient and practical, one line code can be integrated;
-- Provide a more comprehensive and highly customized effect.
-- The default effect can be replaced with one line code. Set your own global default effects. You can also customize the effect again in a special list.
-- Support custom views as the placeholder.
+- 首次进入列表占位图是不显示的。只在网络请求完成后，再次刷新列表时才处理相关逻辑；
+- 简单、高效、实用，最快一行代码就可以集成;
+- 提供更加全面丰富、高度自定义的效果；
+- 可一行代码设置一套自己项目专属的默认方案，然后也可以在某个特殊的列表单独二次自定义效果；
+- 支持用户自行自定义的视图作为占位图；
 
-### 0x002 Renderings
+### 0x002 效果演示
 ![](https://ws1.sinaimg.cn/large/006tNc79gy1fz8jghf5d0g30hj0dsx6p.gif)
 
 
-### 0x003 How to use
-- Use CocoaPods:
-    - write `pod "FMListPlaceholder"` in the `Podfile` file.
-    - Open terminal, cd the directory of project. run `pod install`.
-    - Import the main file：`#import <FMListPlaceholder.h>`
-- Manual import：
-    - Drag All files in the `FMListPlaceholder` folder to project.
-    - Import the main file：`#import "FMListPlaceholder.h"`
+### 0x003 如何使用
+- CocoaPods 使用:
+    - 在  `Podfile`  文件新增 `pod "FMListPlaceholder"` ；
+    - 打开终端, 切换到项目文件目录。 执行 `pod install`；
+    - 导入主头文件：`#import <FMListPlaceholder.h>`
+- 手动拖入 使用：
+    - 下载演示工程，把 `FMListPlaceholder` 文件夹拖入自己项目中；
+    - 导入主头文件：`#import "FMListPlaceholder.h"`；
 
 
-##### One Line Use 
+##### 一行代码使用 
     _tableView.needPlaceholderView = YES;   //the same as UICollectionView
     
 
-Or Use Below
-##### Custom Global Default
+或者如下自定义
+##### 自定义全局默认
 
 ``` objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -50,8 +50,9 @@ Or Use Below
     return YES;
 }
 ```
-#### 0x004 Custom
-##### Custom One List 
+#### 0x004 自定义
+##### 自定义某个特殊列表 
+ 根据自己需求自行调用如下某些接口设置，UITableView 和 UICollectionView 接口相同。
 
 ``` objc
 [_tableView fm_emptyCoverName:@"fm_placeholder_nil" emptyTips:@" "];
@@ -61,7 +62,8 @@ Or Use Below
 ```
 <br/>
 
-##### Click Reload Handle
+##### 点击刷新逻辑
+（如果需要点击刷新逻辑，可实现如下 block）
 
 ``` objc
 _tableView.reloadBlock = ^(UIScrollView *listView) {
@@ -69,32 +71,32 @@ _tableView.reloadBlock = ^(UIScrollView *listView) {
   // [listView.mj_header beginRefreshing]; // reloadData
 };
 ```
-##### Details (See the example program FMListPlaceholderExample for details)
+##### 更加详细请见演示工程
 
 
-### 0x005 Hope
-- If you have any questions during the process or want more interfaces to customize，you can issues me!
-Instead of giving me star, it is better to throw a bug to me!
-- If you want to participate in the maintenance of this project or have a good design style, welcome to pull request!
-- If you feel slightly discomfort in use, please contact me. 
-    - BLOG SITE: [www.yfmingo.cn](www.yfmingo.cn)  
-    - Email: yfmingo@163.com.
-- Hope to improve this project together, let it become more powerful, able to meet the needs of most users!
+### 0x005 希望
+- 如果您在使用过程中有任何疑问或想要更多界面进行自定义，您可以发给我！
 
-### 0x006 Change Log
+- 如果您想参与本项目的维护或具有良好的设计风格，欢迎拉动请求！
+- 如果您在使用时有任何问题，请与我联系。 
+    - 博客网站: [www.yfmingo.cn](www.yfmingo.cn)  
+    - 邮箱: yfmingo@163.com.
+- 希望能够共同完善这个项目，让它变得更强大，能够满足大多数用户的需求！
+
+### 0x006 更新记录
 #### 2019.01.23 V1.1.0
 
-- `[+]` Support custom views as the placeholder;
-- `[+]` Added some usage examples
+- `[+]` 新增支持用户自定义视图作为全局默认占位图 或 某个列表的占位图
+- `[+]` 新增一些使用示例 在 演示工程的 `FMTableViewPlaceholder.m` 文件中
 
-### 0x007 QQ Chat Room
+### 0x007 QQ 群
 ![](https://ws3.sinaimg.cn/small/006tNc79gy1fz8aavckscj30f10kl0us.jpg)
 
-### 0x008 Requirements
+### 0x008 要求
 - iOS 9.0 or later
 - Xcode 9.0 or later
 
-### 0x009 [Licenses](https://github.com/yfming93/FMListPlaceholder/blob/master/LICENSE)
+### 0x009 [许可证](https://github.com/yfming93/FMListPlaceholder/blob/master/LICENSE)
 **All source code is licensed under the MIT [License](https://github.com/yfming93/FMListPlaceholder/blob/master/LICENSE).**
 
 
@@ -119,4 +121,9 @@ Instead of giving me star, it is better to throw a bug to me!
 > LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 > SOFTWARE.
+
+
+
+
+
 
