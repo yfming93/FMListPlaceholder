@@ -22,7 +22,7 @@
 - 支持用户自行自定义的视图作为占位图；
 
 ### 0x002 效果演示
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fz8jghf5d0g30hj0dsx6p.gif)
+![](https://yfmingo.oss-cn-beijing.aliyuncs.com/images/006tNc79ly1fz7ly8x5feg30gx0dokjm.gif)
 
 
 ### 0x003 如何使用
